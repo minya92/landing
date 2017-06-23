@@ -4,6 +4,17 @@ body {
     padding: 0
 }
 
+.btn-kran {
+    width: 95%!important;
+    padding-left: 10%!important;
+    padding-top: 22%!important;
+}
+
+.img-kran {
+    width: 98%;
+    padding-bottom: 5%;
+}
+
 a {
     color: #cc2424;
     text-decoration: none!important
@@ -633,7 +644,8 @@ header .flex-control-nav {
     margin-bottom: 20px
 }
 
-#contact button {
+#contact button,
+#pricing button {
     font-size: 18px;
     font-weight: 800;
     background-color: #cc2424;
@@ -844,6 +856,12 @@ footer .address {
     }
     .container {
         padding: 0 40px
+    }
+    .btn-kran {
+        width: 98%!important;
+        padding-left: 1%!important;
+        padding-top: 1%!important;
+        padding-bottom: 1%!important;        
     }
     /*.navbar {
         position: fixed!important
