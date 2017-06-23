@@ -56,28 +56,31 @@ $(document).ready(function(){
 	});
 	
 	// Gallery Lightbox
-	$('.gallery-img').magnificPopup({
-		delegate: 'a', // child items selector, by clicking on it popup will open
-		type: 'image'
+	jQuery(document).ready(function ($) {
+		$('.gallery-img').magnificPopup({
+			delegate: 'a', // child items selector, by clicking on it popup will open
+			type: 'image'
+		});
 	});
 	
-	// Google Map
-	$('.gmap').gmap3({
-		 map: {
-		    options: {
-		      maxZoom: 16,
-		      mapTypeControl: false,
-		      navigationControl: false,
-		      scrollwheel: false,
-		      streetViewControl: false
-		    }
+	
+	// // Google Map
+	// $('.gmap').gmap3({
+	// 	 map: {
+	// 	    options: {
+	// 	      maxZoom: 16,
+	// 	      mapTypeControl: false,
+	// 	      navigationControl: false,
+	// 	      scrollwheel: false,
+	// 	      streetViewControl: false
+	// 	    }
 		
-		 },
-		 marker:{
-		    address: gmapAddress,
-		 }
-		},
-		"autofit" );
+	// 	 },
+	// 	 marker:{
+	// 	    address: gmapAddress,
+	// 	 }
+	// 	},
+	// 	"autofit" );
 	
 	
 	// Hover Actions
