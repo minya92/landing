@@ -150,13 +150,30 @@
     </div>
     </section>    
     
+
+ 
+	<!-- Modal -->
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel">Modal header</h3>
+	</div>
+	<div class="modal-body">
+		<p>One fine body…</p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		<button class="btn btn-primary">Save changes</button>
+	</div>
+	</div>
+
     <section id="pricing" class="container pricing-anchor">
     	<div class="row pricing-table">
     		<div class="span6 pricing-column-center" style="padding-right: 5px; outline: 1px solid #c5c5c5;">
     			<div class="row " style="padding-top: 3%;">
     				<div class="span3">
 						<div class="btn-kran">
-							<button id="send-contact" style="width: inherit;">Ивановец</button>
+							<button id="send-contact" style="width: inherit;" data-toggle="modal" data-target="#myModal">Ивановец</button>
 						</div>
 					</div>
 					<div class="span3">
@@ -168,7 +185,7 @@
 				<div class="row " style="padding-top: 3%;">
     				<div class="span3">
 						<div class="btn-kran">
-							<button id="send-contact" style="width: inherit;">Челябинец</button>
+							<button id="send-contact" style="width: inherit;" data-toggle="modal" data-target="#myModal">Челябинец</button>
 						</div>
 					</div>
 					<div class="span3">
@@ -180,7 +197,7 @@
 				<div class="row " style="padding-top: 3%;">
     				<div class="span3">
 						<div class="btn-kran">
-							<button id="send-contact" style="width: inherit;">Гличанин</button>
+							<button id="send-contact" style="width: inherit;" data-toggle="modal" data-target="#myModal">Гличанин</button>
 						</div>
 					</div>
 					<div class="span3">
@@ -192,7 +209,7 @@
 				<div class="row " style="padding-top: 3%;">
     				<div class="span3">
 						<div class="btn-kran">
-							<button id="send-contact" style="width: inherit;">Другие</button>
+							<button id="send-contact" style="width: inherit;" data-toggle="modal" data-target="#myModal">Другие</button>
 						</div>
 					</div>
 					<div class="span3">
@@ -227,7 +244,6 @@
     				<!--a class="select-package-button" href="#">Купить</a-->
     			</div>
     		</div>
-    		
     	</div>
 		<div class="row">
 			<div class="span1">
