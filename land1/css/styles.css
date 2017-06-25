@@ -3,7 +3,11 @@ body {
     font-size: 14px;
     padding: 0
 }
-
+.modal {
+    webkit-border-radius: 0px!important;
+    -moz-border-radius: 0px!important;
+    border-radius: 0px!important;
+}
 .btn-kran {
     width: 95%!important;
     padding-left: 10%!important;
@@ -645,7 +649,8 @@ header .flex-control-nav {
 }
 
 #contact button,
-#pricing button {
+#pricing button,
+.mybtn {
     font-size: 18px;
     font-weight: 800;
     background-color: #cc2424;
