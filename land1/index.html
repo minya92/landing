@@ -8,6 +8,8 @@
     <meta name="description" content="FlatDuplex is a grate Landing Page Based on Bootstrap Framework">
     <meta name="author" content="mmaedche">
 
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <!-- Le styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
@@ -37,16 +39,31 @@
 
   <body>
 	
-	<nav>
+	<!--nav>
     <div class="navbar navbar-static-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#"><b>Автокран Гидро Сервис</b></a>
+					<img src="img/logo-left.png">
+						<div class="pull-rigth">
+						<img src="img/logo-right.png">
+					</div>
         </div>
       </div>
     </div>
-	</nav>
-	
+	</nav-->
+
+	<section>
+	<div class="container">
+		<div class="row mynavbar">
+			<div class="span6">
+					<img src="img/logo-left.png">
+			</div>
+			<div class="span6">
+					<img src="img/logo-right.png">
+			</div>
+		</div>
+	</div>
+	</section>	
 
     <!--section id="newsletter">
     <div class="container newsletter-anchor">
@@ -75,23 +92,32 @@
     
 	<section id="about">
     	<div class="container about-anchor">
-    		<div class="row">
+    		<div class="row" style="height:130px;">
 	    		<div class="span8 offset2">
-	    			<h2 class="text-center superlogo">8 800 800 8000</h2>
-	    			<p class="text-center">Позвоните прямо сейчас и получите уникальное супепредложение</p>
+	    			<!--h2 class="text-center superlogo">8 800 800 8000</h2-->
+	    			<!--h3 class="text-center">Позвоните прямо сейчас и получите уникальное супепредложение</h3-->
 	    		</div>
     		</div>
     	</div>
     </section>
 
 	<header class="container home-anchor">
+		<div class="row">
+			<div class="span12">
+				<h1 class="animated fadeInLeftBig animation-delay text-center"> Самые низкие цены на гидроцилиндры для отечественных автокранов</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12">
+				<p class="animated fadeInLeftBig animation-delay text-center" style="font-size: 20px;"> <b>Потому что мы знаем рынок, знаем своих конкурентов и готовы предложить Вам лучшее ценовое решение</b></p>
+			</div>
+		</div>
 	<div class="row">
-		<div class="span5">
-			<h1 class="animated fadeInLeftBig animation-delay"><span class="subtitle">СУПЕР ПРЕДЛОЖЕНИЕ</span> ОТ КОТОРОГО НЕ ОТКАЗЫВАЮТСЯ!</h1>
+		<div class="span5 text-center">
 			<p class="animated fadeInLeftBig animation-delay"><b>Гидроцилинры выдвижения стрелы:</b></p>  
 			<!--a href="#" class="scroll" id="infoslider">Узнайте больше»</a-->
 			<div class="animated fadeInUp buttons-delay">
-				<ul>
+				<!--ul>
 					<li>	КС-55713-1В.63.900-1	</li>
 					<li>	КС-45724-8.63.900-3К-01	</li>
 					<li>	КС-55713-1К-1.63.900	</li>
@@ -104,12 +130,26 @@
 					<li>	ГЦ-150х125х7475	</li>
 					<li>	ГЦ-140х125х6000	</li>
 					<li>	ГЦ-125.100.6000.000-04	</li>
-				</ul>
+				</ul-->
+				<table class="table">
+					<tr> <td>КС-55713-1В.63.900-1</td> <td>206 500p</td> </tr>
+					<tr> <td>КС-45724-8.63.900-3К-01</td> <td>118 900p</td> </tr>
+					<tr> <td>КС-55713-1К-1.63.900</td> <td>132 500p</td> </tr>
+					<tr> <td>КС-55713-1К-2.63.900-2К</td> <td>134 300p</td> </tr>
+					<tr> <td>КС-55713-1К-2.63.900</td> <td>170 000p</td> </tr>
+					<tr> <td>КС-55713-1К-4.63.900-1</td> <td>247 900p</td> </tr>
+					<tr> <td>КС-55713-3К-4В.63.900</td> <td>170 000p</td> </tr>
+					<tr> <td>КС-65719-7К.63.900-1</td> <td>634 250p</td> </tr>
+					<tr> <td>КС-55713.1В.63.900-1А</td> <td>230 000p</td> </tr>
+					<tr> <td>ГЦ-150х125х7475</td> <td>330 000p</td> </tr>
+					<tr> <td>ГЦ-140х125х6000</td> <td>242 000p</td> </tr>
+					<tr> <td>ГЦ-125.100.6000.000-04</td> <td>155 000p</td> </tr>
+				</table>
 			</div>
 			<div class="animated fadeInUp buttons-delay"><a id="download-button" class="button hover animated" href="#">Заказать прямо сейчас!</a></div>
 			<div class="store-buttons animated fadeInUp buttons-delay"></div>
 		</div>
-		<div class="span7 animated fadeInRightBig animation-delay">
+		<div class="span7 animated fadeInRightBig animation-delay" style="padding-top: 100px;">
 			<div class="notebookslider flexslider">
 			  <ul class="slides">
 			    <li>
@@ -127,7 +167,7 @@
 	</div>
     </header>
 	
-	<section id="contact">
+	<section id="contact" class="contact2">
     <div class="container contact-anchor">
 			<p></p>
 	    	<div class="row">
@@ -153,13 +193,13 @@
 			</div>
 			<div class="row">
 				<div class="span4">
-					<button type="submit" id="send-contact" style="width: inherit;">Оформить заказ</button>
+					<button type="submit" id="send-contact" style="width: inherit; height: 65px;">Оформить заказ</button>
 				</div>
 				<div class="span4">
 					<p> </p>
 				</div>
 				<div class="span4">
-					<button type="submit" id="send-contact" style="width: inherit;">Получить коммерческое предложение на почту</button>
+					<button type="submit" id="send-contact" style="width: inherit; height: 65px;">Получить коммерческое предложение на почту</button>
 				</div>
 			</div>
 		</form>
@@ -483,28 +523,28 @@
 	<section id="testimonials" class="container testimonials-anchor">
 		<div class="row">
 			<div class="span12 text-center">
-				<h2>Партнеры</h2>
+				<h2 style="padding-bottom: 20px">Нас снабжают</h2>
 			</div>
 		</div>
     	<div class="row clients">
     		<div class="span3">
 	    		<div class="client-img">
-	    			<img src="img/client1.png" alt="Client Logo1" />
+	    			<a href="http://www.ktzholding.com/ "> <img src="img/comps/ktz.jpg" alt="королевский трубный завод" /> </a>
 	    		</div>
     		</div>
     		<div class="span3">
 	    		<div class="client-img">
-	    			<img src="img/client2.png" alt="Client Logo2" />
+	    			<a href="https://mc.ru/"> <img src="img/comps/ms.jpg" alt="Металл Сервис" /> </a>
 	    		</div>
     		</div>
     		<div class="span3">
 	    		<div class="client-img">
-	    			<img src="img/client3.png" alt="Client Logo3" />
+	    			<a href="https://sales.metinvestholding.com/ru">  <img src="img/comps/mi.jpg" alt="метинвест евразия" /> </a>
 	    		</div>
     		</div>
     		<div class="span3">
 	    		<div class="client-img">
-	    			<img src="img/client4.png" alt="Client Logo4" />
+	    			<a href="https://www.tmk-group.ru/"> <img src="img/comps/tmk.jpg" alt="трубная металлургическая компания" /> </a>
 	    		</div>
     		</div>
     	</div>
@@ -513,13 +553,13 @@
 	<section id="testimonials" class="container testimonials-anchor">
 		<div class="row">
 			<div class="span12 text-center">
-				<h2>Больше информации</h2>
+				<h2 style="padding-bottom: 20px">Больше информации</h2>
 			</div>
 		</div>
 		<div class="row clients">
     		<div class="span12">
 	    		<div class="text-center">
-	    			<a href="http://ya.ru"><img src="img/ksp.jpg" alt="Комплексное снабжение предприятий" /></a>
+	    			<a href="http://ivksp.ru/"><img src="img/ksp.jpg" alt="Комплексное снабжение предприятий" /></a>
 	    		</div>
     		</div>
     	</div>
@@ -533,7 +573,7 @@
 	    	<div class="row">
 	    		<div class="span12">
 	    			<p class="address text-center">АвтокранГидроСервис</p>
-	    			<p class="copyright text-center" >Copyright 2017</p>
+	    			<p class="copyright text-center" >Все права принадлежат компании ООО "КСП"</p>
 	    		</div>
 	    	</div>
 	    </div>

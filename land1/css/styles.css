@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     padding: 0
 }
@@ -13,7 +13,10 @@ body {
     padding-left: 10%!important;
     padding-top: 22%!important;
 }
-
+.mynavbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .img-kran {
     width: 98%;
     padding-bottom: 5%;
@@ -70,8 +73,8 @@ h3 {
     border-bottom: 0;
     box-shadow: none!important;
     background-image: none;
-    background-color: #3d3d3c;
-    min-height: 45px
+    /*background-color: #3d3d3c;*/
+    min-height: 100px
 }
 
 .navbar .nav {
@@ -597,6 +600,11 @@ header .flex-control-nav {
     background: #eff2f5 url('../img/about-bg.jpg') no-repeat center top;
 }
 
+.contact2 {
+    margin-top: 85px;
+    background: #e2e2e2!important;
+}
+
 #contact h2 {
     color: #cc2424;
     vertical-align: bottom;
@@ -924,9 +932,10 @@ footer .address {
         top: -40px
     }
     #about {
-        background-image: none;
+        /*background-image: none;
         background-color: #f3f3f3;
-        padding: 63px 0 20px 0
+        padding: 63px 0 20px 0*/
+        display: none
     }
     #about .profile {
         margin-bottom: 60px
