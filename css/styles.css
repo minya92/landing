@@ -8,6 +8,9 @@ body {
     -moz-border-radius: 0px!important;
     border-radius: 0px!important;
 }
+button, #download-button {
+    border-radius: 25px!important;
+}
 .btn-kran {
     width: 95%!important;
     padding-left: 10%!important;
@@ -29,7 +32,9 @@ a {
 .myico {
     padding-right: 10px;
 }
-
+.red{
+    color: #CC2424!important;
+}
 h1 {
     font-size: 34px
 }
