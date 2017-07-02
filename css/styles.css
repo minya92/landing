@@ -8,6 +8,10 @@ body {
     -moz-border-radius: 0px!important;
     border-radius: 0px!important;
 }
+.alert{
+    background-color: #fff!important;
+    border: 2px solid #e2e2e2!important;
+}
 button, #download-button {
     border-radius: 25px!important;
 }
