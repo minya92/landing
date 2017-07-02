@@ -176,6 +176,12 @@ header .notebookslider {
     height: 358px
 }
 
+.phone {
+    background: #fff url('../img/background-phone.jpg') no-repeat;
+    background-size: contain;
+    box-shadow: none;
+}
+
 header .slides {
     padding: 4.3% 14.5% 23%
 }
@@ -682,7 +688,7 @@ header .flex-control-nav {
 }
 
 footer {
-    background-color: #7f7f7f;
+    background-color: #CC2424;
     color: #fff;
     font-size: 14px;
     margin-top: 95px;
@@ -696,7 +702,7 @@ footer .scroll-top {
 }
 
 footer .scroll-top a {
-    background: #7f7f7f url('../img/scroll-top-button.png') no-repeat 0 0;
+    background: #CC2424 url('../img/scroll-top-button.png') no-repeat 0 0;
     height: 21px;
     width: 58px;
     display: block;
