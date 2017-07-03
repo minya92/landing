@@ -171,44 +171,68 @@
 	<section id="contact" class="contact2">
     <div class="container contact-anchor">
 			<p></p>
-	    	<div class="row">
+		<div class="row">
     		<div class="span12">
-    			<!--h2><i class="icon-map-marker"></i>Контакты</h2-->
-				<div class="alert alert-success hide contact-success">
-					<a class="close" data-dismiss="alert">&times;</a>
-					Your message has been successfully sent
+				<div class="alert alert-success" style="display:none;" id="msg">
+					<a class="close" onclick="hideAlert()">&times;</a>
+					<h3 class="text-center">Спасибо за заказ. Менеджер свяжется с Вами в ближайшее время.</h3>
 				</div>
     		</div>
     	</div>
-		<form method="post" action="http://mmaedche.de/themeforest/themes/flatduplex/flatduplex/fdcc2424/submit-forms.php">
+
+		<script>
+			submitted = false;
+			function formSubmit(){
+				$('#myform').submit();
+			}
+			function showMsg (){
+				$("#msg").show();
+				$("#name").val('');
+				$("#phone").val('');
+				$("#detail").val('');
+			}
+			function hideAlert (){
+				$("#msg").hide();
+			}
+		</script>
+
+		<iframe name="hidden_iframe" id="hidden_iframe"
+		style="display:none;" onload="if(submitted)
+		showMsg()"> </iframe>
+
+		<form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLScVcxe03dOnDnKiMM-92wr2vAbmgTo19MVNT-j4mdToi-EXcg/formResponse" target="hidden_iframe" onsubmit="submitted=true;" id="myForm">
+			<input type="hidden" name="fvv" value="1">
+            <input type="hidden" name="draftResponse" value="[null,null,&quot;-7440971105317699210&quot;]">
+            <input type="hidden" name="pageHistory" value="0">
+            <input type="hidden" name="fbzx" value="-7440971105317699210">
 			<div class="row">		
 				<div class="span4">
-					<input class="input-block-level" type="text" name="name" placeholder="Ваше имя / название организации">
+					<!--input type="text"  autocomplete="off" tabindex="0" name="entry.182612" value="" dir="auto" data-initial-dir="auto" data-initial-value=""-->
+					<input class="input-block-level" id="name" type="text" name="entry.182612" placeholder="Ваше имя / название организации">
 				</div>
 				<div class="span4">						
-					<input class="input-block-level" type="text" name="subject" placeholder="Номер телефона">							
+					<input class="input-block-level" id="phone" type="text" name="entry.2132901364" placeholder="Номер телефона">							
 				</div>
 				<div class="span4">
-					<input id="contact-message" class="input-block-level" type="text" name="message" placeholder="Название детали">
+					<input id="detail" class="input-block-level" type="text" name="entry.1554736692" placeholder="Название детали">
 				</div>
 			</div>
 			<div class="row">
 				<div class="span4">
-					<button type="submit" id="send-contact" style="width: inherit; height: 65px;">Оформить заказ</button>
+					<button type="submit" onclick="formSubmit()" style="width: inherit; height: 65px;">Оформить заказ</button>
 				</div>
 				<div class="span4">
 					<p> </p>
 				</div>
+				</form>
 				<div class="span4">
-					<button type="submit" id="send-contact" style="width: inherit; height: 65px;">Получить коммерческое предложение на почту</button>
+					<button type="submit" id="send-contact" style="width: inherit; height: 65px;" class="b24-web-form-popup-btn-4">Получить коммерческое предложение на почту</button>
 				</div>
 			</div>
-		</form>
+		
     </div>
     </section>    
-    
 
- 
 	<!-- Modal -->
 	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-header">
@@ -619,6 +643,17 @@
 
         b24form({"id":"6","lang":"ru","sec":"5i9aqu","type":"button","click":""});
       </script><!--button class="b24-web-form-popup-btn-6">Мы перезвоним вам</button-->
+
+	  <script id="bx24_form_button" data-skip-moving="true">
+        (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+                (w[b].forms=w[b].forms||[]).push(arguments[0])};
+                if(w[b]['forms']) return;
+                s=d.createElement('script');r=1*new Date();s.async=1;s.src=u+'?'+r;
+                h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://xsp24.bitrix24.ru/bitrix/js/crm/form_loader.js','b24form');
+
+        b24form({"id":"4","lang":"ru","sec":"6nd95b","type":"button","click":""});
+		</script><!--button class="b24-web-form-popup-btn-4">Мы перезвоним вам</button-->
 
       
       <a href="#" id="popup_toggle" onclick="return false;" class="b24-web-form-popup-btn-6"><div class="circlephone" style="transform-origin: center;"></div><div class="circle-fill" style="transform-origin: center;"></div><div class="img-circle" style="transform-origin: center;"><div class="img-circleblock" style="transform-origin: center;"></div></div></a>
