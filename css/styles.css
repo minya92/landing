@@ -1041,6 +1041,11 @@ footer .address {
         color: #cc2424;
         font-size:35px;
     }
+    .alert {
+        padding-right: 20px!important;
+        padding-left: 10px!important;
+        border: 0px!important;
+    }
     .supelogo {
         font-size: 35px!important;
     }
