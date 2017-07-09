@@ -56,12 +56,12 @@ $(document).ready(function(){
 	});
 	
 	// Gallery Lightbox
-	jQuery(document).ready(function ($) {
-		$('.gallery-img').magnificPopup({
-			delegate: 'a', // child items selector, by clicking on it popup will open
-			type: 'image'
-		});
-	});
+	// jQuery(document).ready(function ($) {
+	// 	$('.gallery-img').magnificPopup({
+	// 		delegate: 'a', // child items selector, by clicking on it popup will open
+	// 		type: 'image'
+	// 	});
+	// });
 	
 	
 	// // Google Map
@@ -118,15 +118,15 @@ $(document).ready(function(){
 	  );
 	  
 	  // Gallery Overlay
-	  $('.gallery-img a').hover(
-			  function(){
-				  $(this).find('.img-overlay').animate({'top': '0'}, 'fast');
-			  },
-			  function(){
-				  $(this).find('.img-overlay').animate({'top': '100%'}, 'fast');
-			  }
+	//   $('.gallery-img a').hover(
+	// 		  function(){
+	// 			  $(this).find('.img-overlay').animate({'top': '0'}, 'fast');
+	// 		  },
+	// 		  function(){
+	// 			  $(this).find('.img-overlay').animate({'top': '100%'}, 'fast');
+	// 		  }
 		
-	  );
+	//   );
 	  
 	  // Scroll Top Button
 	  $('.scroll-top').click(function(){
